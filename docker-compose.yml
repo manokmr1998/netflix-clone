@@ -2,24 +2,24 @@
 version: "3.8"
 services:
   movies:
-    image: manokmr1998/manoharkmoviesNetflix:latest
+    image: manokmr1998/manoharkmoviesnetflix:latest
     ports:
       - 81:80
     deploy:
       replicas: 3
   train:
-    image: manokmr1998/manoharktrainNetflix:latest
+    image: manokmr1998/manoharktrainnetflix:latest
     ports:
       - 82:80
     deploy:
       replicas: 3
   recharge:
-    image: manokmr1998/manoharkdthNetflix:latest
+    image: manokmr1998/manoharkdthnetflix:latest
     ports:
       - 83:80
     deploy:
       replicas: 3
   dth:
-    image: manokmr1998/manoharkrechargeNetflix:latest
+    image: manokmr1998/manoharkrechargenetflix:latest
     ports:
       - 84:80
