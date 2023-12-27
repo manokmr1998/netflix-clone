@@ -4,22 +4,22 @@ services:
   movies:
     image: manokmr1998/manoharkmoviesnetflix:latest
     ports:
-      - 81:80
+      - 91:80
     deploy:
       replicas: 3
   train:
     image: manokmr1998/manoharktrainnetflix:latest
     ports:
-      - 82:80
+      - 92:80
     deploy:
       replicas: 3
   recharge:
     image: manokmr1998/manoharkdthnetflix:latest
     ports:
-      - 83:80
+      - 93:80
     deploy:
       replicas: 3
   dth:
     image: manokmr1998/manoharkrechargenetflix:latest
     ports:
-      - 84:80
+      - 94:80
